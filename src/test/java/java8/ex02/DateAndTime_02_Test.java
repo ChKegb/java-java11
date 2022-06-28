@@ -5,6 +5,7 @@ import static org.junit.Assert.assertThat;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.temporal.UnsupportedTemporalTypeException;
 
@@ -23,6 +24,7 @@ public class DateAndTime_02_Test {
 
 		// TODO En exploitant les méthodes de l'objet result, valoriser les
 		// différentes variables afin de rendre le test passant.
+		
 		int year = 0;
 		Month month = null;
 		int dayOfMonth = 0;
@@ -40,11 +42,21 @@ public class DateAndTime_02_Test {
 	public void test_localDate_parse() {
 
 		// TODO créer un objet LocalDate à la date 10/01/1990
+		
+		//LocalDate result = LocalDate.of(10, 1, 1990);
+		
+		
 		// TODO utiliser la méthode parse
-		LocalDate result = null;
+		
+		//LocalDate result = null;
+		LocalDate result = LocalDate.of(10, 1, 1990);
+		LocalDateTime resultat=LocalDateTime.parse("1990-01-10T15:23:41");
+		
+	   
 
 		// TODO En exploitant les méthodes de l'objet result, valoriser les
 		// différentes variables afin de rendre le test passant.
+		
 		int year = 0;
 		Month month = null;
 		int dayOfMonth = 0;
