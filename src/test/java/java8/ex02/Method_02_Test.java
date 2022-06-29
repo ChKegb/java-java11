@@ -19,6 +19,11 @@ public class Method_02_Test {
         // TODO créer une méthode String format()
         // TODO la méthode retourne une chaîne de la forme [<nb_personnes> persons]
         // TODO exemple de résultat : "[14 persons]", "[30 persons]"
+        
+        default String format() {
+        	StringBuilder builder = new StringBuilder();
+        	return builder.append("[").append(findAll().size()).append( " persons]").toString();
+        }
     }
     // end::IDao[]
 
@@ -33,6 +38,8 @@ public class Method_02_Test {
         }
 
         // TODO redéfinir la méthode String format()
+        
+      
         // TODO la méthode retourne une chaîne de la forme DaoA[<nb_personnes> persons]
         // TODO exemple de résultat : "DaoA[14 persons]", "DaoA[30 persons]"
         // TODO l'implémentation réutilise la méthode format() de l'interface
